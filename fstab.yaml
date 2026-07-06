@@ -1,0 +1,12 @@
+# Bootstrap config: read once by the AEM Code Sync bot on install to
+# seed the config service, then ignored. Make later config changes via
+# the Helix API. See: https://www.aem.live/docs/config-service-setup
+mountpoints:
+  /:
+    url: https://content.da.live/tstroe44/shoe-shop/
+    type: markup
+
+# Folder Mapping is deprecated, but seeds quick product viewing.
+# See: https://www.aem.live/developer/folder-mapping
+folders:
+  /products/: /products/default
